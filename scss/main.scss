@@ -7,6 +7,91 @@ $yellow-500: hsl(39, 100%, 71%);
 $white: hsl(0, 0%, 100%);
 $black: hsl(0, 0%, 7%);
 
+@mixin highlight($color){
+  color: $color;
+}
+
+// header includes weight, size, color 
+@mixin section ($align, $bg, $header-weight, $header-size, $header-color, $text-align, $padding-top-bottom: 0, $padding-left-right: 0, $header-letter-spacing:1px){
+  display: flex;
+  flex-direction: column;
+  align-items: $align;
+  background-color: $bg;
+  padding: $padding-top-bottom $padding-left-right;
+  border-radius: 10px;
+  line-height: 1;
+  text-align: $text-align;
+  
+  .header{
+    margin: 0;
+    font-weight: $header-weight;
+    font-size: $header-size;
+    color: $header-color;
+    letter-spacing: $header-letter-spacing;
+  }
+
+  figure{
+    margin: 0;
+
+    img{
+      width: 100%;
+    }
+  }
+}
+
 body{
+  padding: 0;
+  margin: 0;
   font-family: $font;
+  background-color: rgb(241, 241, 241);
+}
+
+main {
+  margin: 30px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  .review-section{
+    @include section(center, $purple-500, 500, 2.8em, $white, center, 40px, 35px);
+
+    .header{
+      margin-bottom: 20px;
+      .highlight{
+        @include highlight($yellow-500);
+      }
+    }
+
+    figure{
+      width: 190px;
+    }
+
+    p{
+      margin: 10px 0 0;
+      color: $white;
+      font-weight: 200;
+      font-size: 19px;
+    }
+  }
+
+  .platform-section{
+    @include section(left, $white, 500, 1.6em, $black, left, 15px, 15px, -2px);
+
+    figure{
+      margin-bottom: 10px;
+    }
+  }
+
+  .posting-schedule-section{
+    @include section(left, $yellow-500, 500, 1.6em, $black, left, 15px, 15px, -2px);
+    padding-bottom: 0;
+    padding-right: 30px;
+    height: 185px;
+
+    figure{
+      width: 190px;
+      overflow: hidden;
+      margin-top: 10px;
+    }
+  }
 }
