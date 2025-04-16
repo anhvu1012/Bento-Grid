@@ -52,7 +52,7 @@ main .review-section p {
 main .platform-section {
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: start;
   background-color: hsl(0, 0%, 100%);
   padding: 15px 15px;
   border-radius: 10px;
@@ -78,7 +78,7 @@ main .platform-section figure {
 main .posting-schedule-section {
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: start;
   background-color: hsl(39, 100%, 71%);
   padding: 15px 15px;
   border-radius: 10px;
@@ -105,4 +105,146 @@ main .posting-schedule-section figure {
   width: 190px;
   overflow: hidden;
   margin-top: 10px;
+}
+main .media-schedule-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsl(254, 88%, 90%);
+  padding: 20px 15px;
+  border-radius: 10px;
+  line-height: 1;
+  text-align: center;
+}
+main .media-schedule-section .header {
+  margin: 0;
+  font-weight: 500;
+  font-size: 1.6em;
+  color: hsl(0, 0%, 7%);
+  letter-spacing: -2px;
+}
+main .media-schedule-section figure {
+  margin: 0;
+}
+main .media-schedule-section figure img {
+  width: 100%;
+}
+main .media-schedule-section .header, main .media-schedule-section figure {
+  margin: 10px 0;
+}
+main .media-schedule-section p {
+  font-size: 1.1em;
+  margin: 10px;
+}
+main .follower-grow-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsl(256, 67%, 59%);
+  padding: 20px 55px;
+  border-radius: 10px;
+  line-height: 1;
+  text-align: center;
+}
+main .follower-grow-section .header {
+  margin: 0;
+  font-weight: 500;
+  font-size: 1.9em;
+  color: hsl(0, 0%, 100%);
+  letter-spacing: -1px;
+}
+main .follower-grow-section figure {
+  margin: 0;
+}
+main .follower-grow-section figure img {
+  width: 100%;
+}
+main .follower-grow-section figure {
+  margin-bottom: 30px;
+}
+main .audience-grow-section {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  background-color: hsl(0, 0%, 100%);
+  padding: 20px 20px;
+  border-radius: 10px;
+  line-height: 1;
+  text-align: left;
+}
+main .audience-grow-section .header {
+  margin: 0;
+  font-weight: 500;
+  font-size: 2.8em;
+  color: hsl(0, 0%, 7%);
+  letter-spacing: 0px;
+}
+main .audience-grow-section figure {
+  margin: 0;
+}
+main .audience-grow-section figure img {
+  width: 100%;
+}
+main .audience-grow-section p {
+  font-size: 18px;
+}
+main .audience-grow-section figure {
+  width: 180px;
+}
+main .create-section {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  background-color: hsl(31, 66%, 93%);
+  padding: 30px 30px;
+  border-radius: 10px;
+  line-height: 1;
+  text-align: left;
+}
+main .create-section .header {
+  margin: 0;
+  font-weight: 500;
+  font-size: 2em;
+  color: hsl(0, 0%, 7%);
+  letter-spacing: -2px;
+}
+main .create-section figure {
+  margin: 0;
+}
+main .create-section figure img {
+  width: 100%;
+}
+main .create-section .header i {
+  color: hsl(256, 67%, 59%);
+}
+main .create-section figure {
+  width: 180px;
+  margin-top: 20px;
+}
+main .write-ai-content-section {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  background-color: hsl(39, 100%, 71%);
+  padding: 20px 25px;
+  border-radius: 10px;
+  line-height: 1;
+  text-align: left;
+}
+main .write-ai-content-section .header {
+  margin: 0;
+  font-weight: 500;
+  font-size: 2em;
+  color: hsl(0, 0%, 7%);
+  letter-spacing: -2px;
+}
+main .write-ai-content-section figure {
+  margin: 0;
+}
+main .write-ai-content-section figure img {
+  width: 100%;
+}
+main .write-ai-content-section figure {
+  width: 210px;
+  margin-top: 20px;
 }/*# sourceMappingURL=main.css.map */
