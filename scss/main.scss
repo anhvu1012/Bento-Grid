@@ -40,6 +40,9 @@ $black: hsl(0, 0%, 7%);
 }
 
 body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 0;
   margin: 0;
   font-family: $font;
@@ -87,10 +90,10 @@ main {
     padding-bottom: 0;
     padding-right: 30px;
     height: 185px;
+    overflow: hidden;
 
     figure{
       width: 190px;
-      overflow: hidden;
       margin-top: 10px;
     }
   }
@@ -149,6 +152,133 @@ main {
     figure{
       width: 210px;
       margin-top: 20px;
+    }
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  body{
+    margin: 50px 100px;
+  }
+
+  main{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(10, 70px);
+    
+    .create-section{
+      grid-area: 1 / 1 / 6 / 2;
+      justify-content: center;
+      .header{
+        font-size: 2.8em;
+      }
+      figure{
+        width: auto;
+      }
+    }
+
+    .write-ai-content-section{
+      grid-area: 6 / 1 / 11 / 2;
+      justify-content: space-between;
+      .header{
+        font-size: 2.8em;
+      }
+      figure{
+        width: auto;
+      }
+    }
+
+    .review-section{
+      grid-area: 1 / 2 / 5 / 4;
+      justify-content: center;
+      .header{
+        font-size: 4em;
+      }
+    }
+
+    .media-schedule-section {
+      grid-area: 1 / 4 / 8 / 5;
+      padding: 30px;
+      justify-content: center;
+      align-items: start;
+      text-align: left;
+      overflow: hidden;
+      .header{
+        font-size: 2.2em;
+      }
+      figure{
+        img{
+          height: 360px;
+          width: auto;
+        }
+      }
+      p{
+        margin: 10px 0 0;
+        font-size: 1.2em;
+      }
+    }
+
+    .platform-section{
+      grid-area: 5 / 2 / 8 / 3;
+      padding: 25px;
+      justify-content: space-between;
+      overflow: hidden;
+      .header{
+        font-size: 2.2em;
+      }
+      figure{
+        margin: 0;
+        img{
+          width: auto;
+          height: 72px;
+        }
+      }
+    }
+
+    .posting-schedule-section{
+      grid-area: 5 / 3 / 8 / 4;
+      padding: 25px;
+      height: auto;
+      .header{
+        font-size: 2.2em;
+      }
+      figure{
+        width: auto;
+      }
+    }
+    
+    .audience-grow-section{
+      grid-area: 8 / 2 / 11 / 3;
+      padding: 25px;
+      justify-content: space-between;
+      overflow: hidden;
+      .header{
+        font-size: 4em;
+      }
+      figure{
+        width: auto;
+      }
+    }
+
+    .follower-grow-section{
+      grid-area: 8 / 3 / 11 / 5;
+      flex-direction: row;
+      padding: 20px 25px;
+      text-align: left;
+      gap: 10px;
+      overflow: hidden;
+      figure{ 
+        margin: 0;
+        height: 100%;
+        width: auto;
+        img{
+          height: 100%;
+          width: auto;
+        }
+      }
+      .header{
+        font-size: 2.6em;
+      }
     }
   }
 }

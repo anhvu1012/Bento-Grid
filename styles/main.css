@@ -1,4 +1,7 @@
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 0;
   margin: 0;
   font-family: "DM Sans", sans-serif;
@@ -87,6 +90,7 @@ main .posting-schedule-section {
   padding-bottom: 0;
   padding-right: 30px;
   height: 185px;
+  overflow: hidden;
 }
 main .posting-schedule-section .header {
   margin: 0;
@@ -103,7 +107,6 @@ main .posting-schedule-section figure img {
 }
 main .posting-schedule-section figure {
   width: 190px;
-  overflow: hidden;
   margin-top: 10px;
 }
 main .media-schedule-section {
@@ -247,4 +250,120 @@ main .write-ai-content-section figure img {
 main .write-ai-content-section figure {
   width: 210px;
   margin-top: 20px;
+}
+
+@media screen and (min-width: 1100px) {
+  body {
+    margin: 50px 100px;
+  }
+  main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(10, 70px);
+  }
+  main .create-section {
+    grid-area: 1/1/6/2;
+    justify-content: center;
+  }
+  main .create-section .header {
+    font-size: 2.8em;
+  }
+  main .create-section figure {
+    width: auto;
+  }
+  main .write-ai-content-section {
+    grid-area: 6/1/11/2;
+    justify-content: space-between;
+  }
+  main .write-ai-content-section .header {
+    font-size: 2.8em;
+  }
+  main .write-ai-content-section figure {
+    width: auto;
+  }
+  main .review-section {
+    grid-area: 1/2/5/4;
+    justify-content: center;
+  }
+  main .review-section .header {
+    font-size: 4em;
+  }
+  main .media-schedule-section {
+    grid-area: 1/4/8/5;
+    padding: 30px;
+    justify-content: center;
+    align-items: start;
+    text-align: left;
+    overflow: hidden;
+  }
+  main .media-schedule-section .header {
+    font-size: 2.2em;
+  }
+  main .media-schedule-section figure img {
+    height: 360px;
+    width: auto;
+  }
+  main .media-schedule-section p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+  }
+  main .platform-section {
+    grid-area: 5/2/8/3;
+    padding: 25px;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+  main .platform-section .header {
+    font-size: 2.2em;
+  }
+  main .platform-section figure {
+    margin: 0;
+  }
+  main .platform-section figure img {
+    width: auto;
+    height: 72px;
+  }
+  main .posting-schedule-section {
+    grid-area: 5/3/8/4;
+    padding: 25px;
+    height: auto;
+  }
+  main .posting-schedule-section .header {
+    font-size: 2.2em;
+  }
+  main .posting-schedule-section figure {
+    width: auto;
+  }
+  main .audience-grow-section {
+    grid-area: 8/2/11/3;
+    padding: 25px;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+  main .audience-grow-section .header {
+    font-size: 4em;
+  }
+  main .audience-grow-section figure {
+    width: auto;
+  }
+  main .follower-grow-section {
+    grid-area: 8/3/11/5;
+    flex-direction: row;
+    padding: 20px 25px;
+    text-align: left;
+    gap: 10px;
+    overflow: hidden;
+  }
+  main .follower-grow-section figure {
+    margin: 0;
+    height: 100%;
+    width: auto;
+  }
+  main .follower-grow-section figure img {
+    height: 100%;
+    width: auto;
+  }
+  main .follower-grow-section .header {
+    font-size: 2.6em;
+  }
 }/*# sourceMappingURL=main.css.map */
