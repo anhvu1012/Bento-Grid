@@ -1,0 +1,33 @@
+@import './variables';
+
+@mixin highlight($color){
+  color: $color;
+}
+
+// header includes weight, size, color 
+@mixin section ($align, $bg, $header-weight, $header-size, $header-color, $text-align, $padding-top-bottom: 0, $padding-left-right: 0, $header-letter-spacing:1px){
+  display: flex;
+  flex-direction: column;
+  align-items: $align;
+  background-color: $bg;
+  padding: $padding-top-bottom $padding-left-right;
+  border-radius: 10px;
+  line-height: 1;
+  text-align: $text-align;
+  
+  .header{
+    margin: 0;
+    font-weight: $header-weight;
+    font-size: $header-size;
+    color: $header-color;
+    letter-spacing: $header-letter-spacing;
+  }
+
+  figure{
+    margin: 0;
+
+    img{
+      width: 100%;
+    }
+  }
+}

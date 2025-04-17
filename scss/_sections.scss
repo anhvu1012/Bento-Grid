@@ -1,0 +1,104 @@
+@import './variables';
+@import './mixins';
+
+main {
+  .review-section{
+    @include section(center, $purple-500, 500, 2.8em, $white, center, 40px, 35px);
+
+    .header{
+      margin-bottom: 20px;
+      .highlight{
+        @include highlight($yellow-500);
+      }
+    }
+
+    figure{
+      width: 190px;
+    }
+
+    p{
+      margin: 10px 0 0;
+      color: $white;
+      font-weight: 200;
+      font-size: 19px;
+    }
+  }
+
+  .platform-section{
+    @include section(start, $white, 500, 1.6em, $black, left, 15px, 15px, -2px);
+
+    figure{
+      margin-bottom: 10px;
+    }
+  }
+
+  .posting-schedule-section{
+    @include section(start, $yellow-500, 500, 1.6em, $black, left, 15px, 15px, -2px);
+    padding-bottom: 0;
+    padding-right: 30px;
+    height: 185px;
+    overflow: hidden;
+
+    figure{
+      width: 190px;
+      margin-top: 10px;
+    }
+  }
+
+  .media-schedule-section{
+    @include section(center, $purple-100, 500, 1.6em, $black, center, 20px, 15px, -2px);
+
+    .header, figure{
+      margin: 10px 0;
+    }
+
+    p{
+      font-size: 1.1em;
+      margin: 10px;
+    }
+  }
+
+  .follower-grow-section{
+    @include section(center, $purple-500, 500, 1.9em, $white, center, 20px, 55px, -1px);
+
+    figure{
+      margin-bottom: 30px;
+    }
+  }
+
+  .audience-grow-section{
+    @include section(start, $white, 500, 2.8em, $black, left, 20px, 20px, 0px);
+
+    p{
+      font-size: 18px;
+    }
+
+    figure{
+      width: 180px;
+    }
+  }
+
+  .create-section{
+    @include section(start, $yellow-100, 500, 2em, $black, left, 30px, 30px, -2px);
+
+    .header{
+      i{
+        color: $purple-500;
+      }
+    }
+
+    figure{
+      width: 180px;
+      margin-top: 20px;
+    }
+  }
+
+  .write-ai-content-section{
+    @include section(start, $yellow-500, 500, 2em, $black, left, 20px, 25px, -2px);
+
+    figure{
+      width: 210px;
+      margin-top: 20px;
+    }
+  }
+}
